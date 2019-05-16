@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DATA model="OBJSET" version="1.0.0.0" scope="OBJSETINIT" export="OK">
+	<SET_Definitions>
+	    <SetId>2004000</SetId>
+	    <SetName>SET_SPDB_CCPP</SetName>
+	    <SetType>DIAG_SCOPE</SetType>
+	    <SetProcedure>SET_SPDB_CCPP_2004000</SetProcedure>
+	</SET_Definitions>	
+
+</DATA>
