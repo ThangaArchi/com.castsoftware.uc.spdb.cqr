@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<!-- 2004002 :: Initialize the variable while defining it  -->
+	<metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="name">
+	    <english>Initialize the variable while defining it</english>
+	</metric>
+	<metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="rationale">
+	    <english>Variables are defined but it is not initialized with temporary / default values</english>
+	</metric>
+	<metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="description">
+	    <english>Un-itialized variables may contain junk data with the contents of stack memory before the function was invoked. So An attacker can sometimes control or read these contents. In other languages or conditions, a variable that is not explicitly initialized can be given a default value that has security implications, depending on the logic of the program. The presence of an uninitialized variable can sometimes indicate a typographic error in the code.</english>
+	</metric>
+	<metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="remediation">
+	    <english>All the variables must be initialized while defining it</english>
+	</metric>
+	
+	<metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="remediationSample">
+	    <english>Initialize the variable while defining it.
+	    For example define the variable and initialize like below:
+	    	===> int a = 100
+	    </english>
+	</metric>
+	
+	<metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="sample">
+	    <english>Sample: int x = 500</english>
+	</metric>
+	
+	<metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="output">
+	    <english>Security, Architectural, improper behavior of the program can be avoided</english>
+    </metric>
+    <metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="associatedValueName">
+	    <english>Asoociated Values: Initialize the variable while defining it</english>
+	</metric>
+	 <metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" section="total">
+		<english>The total procedure counts Components Access.</english>
+	 </metric>
+	 
+	 
+	 
+	 
+	 
+	 
+
+
+
+
+
+
+
+
+	<!-- 2004004 :: Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body  -->
+	<metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="name">
+	    <english>Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body</english>
+	</metric>
+	
+	<metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="rationale">
+	    <english>This check detects anytime the memory for a stack variable declared in a function is accessed after that function returns. Attempting to access stack memory after a function return can result in a crash or other unpredictable behavior.</english>
+	</metric>
+	
+	<metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="description">
+	    <english>This check detects anytime the memory for a stack variable declared in a function is accessed after that function returns. Attempting to access stack memory after a function return can result in a crash or other unpredictable behavior.</english>
+	</metric>
+	
+	<metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="remediation">
+	    <english>Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body</english>
+	</metric>
+	
+	<metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="remediationSample">
+	    <english>Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body fixed.</english>
+	</metric>
+	
+	<metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="sample">
+	    <english>Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body</english>
+	</metric>
+	
+	<metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="output">
+	    <english>Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body</english>
+    </metric>
+	
+    <metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="associatedValueName">
+	    <english>Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body</english>
+	</metric>
+	
+	 <metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" section="total">
+		<english>Number of pointers and it's memory allocation</english>
+	 </metric>
+
+	 
+	 
+
+
+	<!-- 2004006 :: Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL -->
+	<metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="name">
+	    <english>Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL</english>
+	</metric>
+	
+	<metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="rationale">
+	    <english>Unfortunately, many programmers are careless about checking of pointers, and sometimes they deliberately do not check whether to memory was allocated or not. 
+	    It  does not guarantee that there will be enough of physical memory, when we begin to use the allocated memory buffer. 
+	    Therefore, if there are still no guarantees, it is not necessary to perform a check.
+	    
+		
+	    </english>
+	</metric>
+	
+	<metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="description">
+	    <english>If the malloc function is unable to allocate the memory buffer, it returns NULL. 
+	    Any normal program should check the pointers which the malloc function returns and properly handle the situation when the memory allocation failed.
+	    </english>
+	</metric>
+	
+	<metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="remediation">
+	    <english>Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL
+	    
+				https://cwe.mitre.org/data/definitions/690.html
+				
+				https://cwe.mitre.org/data/definitions/252.html
+	    
+				https://cwe.mitre.org/data/definitions/476.html
+	    </english>
+	</metric>
+	
+	<metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="remediationSample">
+	    <english>
+	    Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL fixed.
+	    	 int *piBuffer = NULL; 
+	    	 
+	    	 //creating integer of size n. 
+	    	 piBuffer = (int*) malloc(20); 
+	    	 
+	    	 //make sure pcBuffer is valid or not with NULL, before using every where &amp; each time 
+	    	 if ( piBuffer == NULL ) { 
+	    	 	// piBuffer is NULL, be alert. 
+	    	 } else {
+				// piBuffer can be used for any business logic here. 
+	    	 } 
+		</english>
+	</metric>
+	
+	<metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="sample">
+	    <english>Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL
+	    
+				https://cwe.mitre.org/data/definitions/690.html
+				
+				https://cwe.mitre.org/data/definitions/252.html
+	    
+				https://cwe.mitre.org/data/definitions/476.html
+	    </english>
+	</metric>
+	
+	<metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="output">
+	    <english>Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL</english>
+    </metric>
+	
+    <metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="associatedValueName">
+	    <english>Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL</english>
+	</metric>
+	
+	 <metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" section="total">
+		<english>Number of pointers and it's memory allocation</english>
+	 </metric>
+
+
+	 
+	 
+
+
+	<!-- 2004008 :: Set the pointer to NULL immediately after freeing memory with free to prevent "wild Pointers" -->
+	<metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="name">
+	    <english>Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'</english>
+	</metric>
+	
+	<metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="rationale">
+	    <english>Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'</english>
+	</metric>
+	
+	<metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="description">
+	    <english>
+	    In this cases, pointers has not been initialized to anything (not even NULL) is known as wild pointer. 
+	    The pointer may be initialized to a non-NULL garbage value that may not be a valid address.
+	    
+		</english>
+	</metric>
+	
+	<metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="remediation">
+	    <english>Wild pointers needs to be freed with free() and then immediately set it to NULL</english>
+	</metric>
+	
+	<metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="remediationSample">
+	    <english>
+	    Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers' fixed.
+	          int *ptrFlag; // This is Wild pointer
+	          int count = 10;
+	          for (int i=0; i&lt;=count; i++)
+	          	// process count
+	    </english>
+	</metric>
+
+	<metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="sample">
+	    <english>
+
+			int *ptrFlag; 
+			
+			int *ptrFlag = (int *)malloc(sizeof(int));
+			// Any statements;
+	
+			free (ptrFlag);
+			
+			ptrFlag = NULL; 
+     	    
+		</english>
+	</metric>
+	
+	<metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="output">
+	    <english>Wild pointer is assigned with proper memory and and released by setting pointer to NULL immediately after freeing memory with free()</english>
+    </metric>
+	
+    <metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="associatedValueName">
+	    <english>Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'</english>
+	</metric>
+		
+	 <metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" section="total">
+		<english>Number of pointers and it's memory allocation</english>
+	 </metric>
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	<!-- Boolean variables can not be compared directly to true, false, or 1, 0 -->	 
+	<metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="name">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	</metric>
+	<metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="rationale">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	</metric>
+	<metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="description">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	</metric>
+	<metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="remediation">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	</metric>
+	
+	<metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="remediationSample">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	</metric>
+	
+	<metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="sample">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	</metric>
+	
+	<metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="output">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+    </metric>
+    <metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="associatedValueName">
+	    <english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	</metric>
+	 <metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" section="total">
+		<english>Boolean variables can not be compared directly to true, false, or 1, 0</english>
+	 </metric>
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	<!-- Integer variables should use  '==' or '!=' for directly comparing to 0 -->	 
+	<metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="name">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	</metric>
+	<metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="rationale">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	</metric>
+	<metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="description">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	</metric>
+	<metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="remediation">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	</metric>
+	
+	<metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="remediationSample">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	</metric>
+	
+	<metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="sample">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	</metric>
+	
+	<metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="output">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+    </metric>
+    <metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="associatedValueName">
+	    <english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	</metric>
+	 <metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" section="total">
+		<english>Integer variables should use  '==' or '!=' for directly comparing to 0</english>
+	 </metric>
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	<!-- Floating point variables can not compare to any number with an '==' or '!=' -->	 
+	<metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="name">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	</metric>
+	<metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="rationale">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	</metric>
+	<metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="description">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	</metric>
+	<metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="remediation">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	</metric>
+	
+	<metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="remediationSample">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	</metric>
+	
+	<metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="sample">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	</metric>
+	
+	<metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="output">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+    </metric>
+    <metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="associatedValueName">
+	    <english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	</metric>
+	 <metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" section="total">
+		<english>Floating point variables can not compare to any number with an '==' or '!='</english>
+	 </metric>
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	<!-- Pointer variables should use '==' or '!=' compared with NULL -->	 
+	<metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="name">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	</metric>
+	<metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="rationale">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	</metric>
+	<metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="description">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	</metric>
+	<metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="remediation">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	</metric>
+	
+	<metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="remediationSample">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	</metric>
+	
+	<metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="sample">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	</metric>
+	
+	<metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="output">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+    </metric>
+    <metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="associatedValueName">
+	    <english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	</metric>
+	 <metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" section="total">
+		<english>Pointer variables should use '==' or '!=' compared with NULL</english>
+	 </metric>
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	<!-- Do not access freed memory -->	 
+	<metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="name">
+	    <english>Do not access freed memory</english>
+	</metric>
+	<metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="rationale">
+	    <english>Do not access freed memory</english>
+	</metric>
+	<metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="description">
+	    <english>Do not access freed memory</english>
+	</metric>
+	<metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="remediation">
+	    <english>Do not access freed memory</english>
+	</metric>
+	
+	<metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="remediationSample">
+	    <english>Do not access freed memory</english>
+	</metric>
+	
+	<metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="sample">
+	    <english>Do not access freed memory</english>
+	</metric>
+	
+	<metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="output">
+	    <english>Do not access freed memory</english>
+    </metric>
+    <metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="associatedValueName">
+	    <english>Do not access freed memory</english>
+	</metric>
+	 <metric id="2004018" type="quality-rule" originalName="Do not access freed memory" section="total">
+		<english>Do not access freed memory</english>
+	 </metric>
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	<!-- Each case branch of the switch statement should have comments -->	 
+	<metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="name">
+	    <english>Each case branch of the switch statement should have comments</english>
+	</metric>
+	<metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="rationale">
+	    <english>Each case branch of the switch statement should have comments</english>
+	</metric>
+	<metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="description">
+	    <english>Each case branch of the switch statement should have comments</english>
+	</metric>
+	<metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="remediation">
+	    <english>Each case branch of the switch statement should have comments</english>
+	</metric>
+	
+	<metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="remediationSample">
+	    <english>Each case branch of the switch statement should have comments</english>
+	</metric>
+	
+	<metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="sample">
+	    <english>Each case branch of the switch statement should have comments</english>
+	</metric>
+	
+	<metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="output">
+	    <english>Each case branch of the switch statement should have comments</english>
+    </metric>
+    <metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="associatedValueName">
+	    <english>Each case branch of the switch statement should have comments</english>
+	</metric>
+	 <metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" section="total">
+		<english>Each case branch of the switch statement should have comments</english>
+	 </metric>
+
+
+
+</root>

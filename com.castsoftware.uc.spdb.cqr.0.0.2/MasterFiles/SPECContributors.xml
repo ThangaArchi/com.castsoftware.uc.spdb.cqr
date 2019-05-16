@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004002" contributorType="quality-rule" contributorOriginalName="Initialize the variable while defining it" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004004" contributorType="quality-rule" contributorOriginalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004006" contributorType="quality-rule" contributorOriginalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004008" contributorType="quality-rule" contributorOriginalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" critical="true" weight="6"/>
+
+
+
+
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004010" contributorType="quality-rule" contributorOriginalName="Boolean variables can not be compared directly to true, false, or 1, 0" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004012" contributorType="quality-rule" contributorOriginalName="Integer variables should use  '==' or '!=' for directly comparing to 0" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004014" contributorType="quality-rule" contributorOriginalName="Floating point variables can not compare to any number with an '==' or '!='" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004016" contributorType="quality-rule" contributorOriginalName="Pointer variables should use '==' or '!=' compared with NULL" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004018" contributorType="quality-rule" contributorOriginalName="Do not access freed memory" critical="true" weight="6"/>
+
+<metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness" contributorId="2004020" contributorType="quality-rule" contributorOriginalName="Each case branch of the switch statement should have comments" critical="true" weight="6"/>
+
+
+</root>
