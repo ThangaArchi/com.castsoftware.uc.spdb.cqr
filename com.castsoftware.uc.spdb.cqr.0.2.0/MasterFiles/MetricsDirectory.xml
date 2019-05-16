@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+
+    <metric id="61024" type="technical-criterion" originalName="Programming Practices - Structuredness"    active='N/A' detached='N/A' ignored="N/A"/>
+    
+    <metric id="2004002" type="quality-rule" originalName="Initialize the variable while defining it" active="true" detached="false" ignored="false"/>
+
+    <metric id="2004004" type="quality-rule" originalName="Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function body" active="true" detached="false" ignored="false"/>
+
+    <metric id="2004006" type="quality-rule" originalName="Once memory is applied with malloc, it should be immediately checked whether the pointer value is NULL" active="true" detached="false" ignored="false"/>
+
+    <metric id="2004008" type="quality-rule" originalName="Set the pointer to NULL immediately after freeing memory with free to prevent 'Wild Pointers'" active="true" detached="false" ignored="false"/>  
+	
+
+
+
+
+   <metric id="2004010" type="quality-rule" originalName="Boolean variables can not be compared directly to true, false, or 1, 0" active="true" detached="false" ignored="false"/>  
+  
+   <metric id="2004012" type="quality-rule" originalName="Integer variables should use  '==' or '!=' for directly comparing to 0" active="true" detached="false" ignored="false"/>  
+  
+   <metric id="2004014" type="quality-rule" originalName="Floating point variables can not compare to any number with an '==' or '!='" active="true" detached="false" ignored="false"/>  
+  
+   <metric id="2004016" type="quality-rule" originalName="Pointer variables should use '==' or '!=' compared with NULL" filter="0" active="true" detached="false" ignored="false"/>  
+  
+   <metric id="2004018" type="quality-rule" originalName="Do not access freed memory" active="true" detached="false" ignored="false"/>  
+  
+   <metric id="2004020" type="quality-rule" originalName="Each case branch of the switch statement should have comments" active="true" detached="false" ignored="false"/>  
+
+   <metric id="2004022" type="quality-rule" originalName="Security code to consider guarding against Possibility of SQL injection vulnerabilities" active="true" detached="false" ignored="false"/>  
+
+   <metric id="2004024" type="quality-rule" originalName="Avoid converting a pointer to a non-pointer type or vice versa" active="true" detached="false" ignored="false"/>  
+
+
+
+
+   <metric id="2004026" type="quality-rule" originalName="Ensure that file handler/pointer will be closed as soon as they are no longer needed" active="true" detached="false" ignored="false"/>  
+
+   <metric id="2004028" type="quality-rule" originalName="Close and release file handle, heap memory, database cursor and other system resources in time to avoid system resource exhaustion attack" active="true" detached="false" ignored="false"/>  
+
+   <metric id="2004030" type="quality-rule" originalName="Avoid array or pointer indices that cross boundaries" active="true" detached="false" ignored="false"/>  
+
+   <metric id="2004032" type="quality-rule" originalName="To prevent duplicate references to header files; #ifndef/#define/#endif structure should be used to create preprocessing blocks" active="true" detached="false" ignored="false"/>  
+
+   <metric id="2004034" type="quality-rule" originalName="Dynamic memory requests and releases must be matched to prevent memory leaks" active="true" detached="false" ignored="false"/>  
+  
+
+
+
+
+</root>
