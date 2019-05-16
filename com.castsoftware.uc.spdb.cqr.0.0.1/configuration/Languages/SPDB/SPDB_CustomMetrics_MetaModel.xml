@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metaModel  file_level="client" file_no="3">
+
+	<category name="SPDB_CustomMetrics_C" id="2004000">
+		<description>Custom category for additional properties on C/C++</description>
+     
+		<!-- SPDB 9-1-3 -->
+		<property name="SPDBviolation9_1_3" type="integer" id="2004002">
+			<description>SPDB-9-1-3: Initialize the variable while defining it(C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004251"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+	  	
+	  	<!-- SPDB 12-2-5 -->
+		<property name="SPDBviolation12_2_5" type="integer" id="2004004">
+			<description>SPDB-12-2-5: Avoid return Pointer, because memory exists and is destroyed automatically at the end of the function bod (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004252"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+	  	
+		<!-- SPDB 14-1-1 -->
+		<property name="SPDBviolation14_1_1" type="integer" id="2004006">
+			<description>SPDB-14-1-1: Once you apply for memory with malloc, you should immediately check whether the pointer value is NULL (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004253"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+				 	 
+		<!-- SPDB 14-1-5 -->
+		<property name="SPDBviolation14_1_5" type="integer" id="2004008">
+			<description>SPDB-14-1-5: Set the pointer to NULL immediately after freeing memory with free to prevent "wild Pointers"" (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004254"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+				 	 
+      
+		<!-- 
+		<property name="SPDB1031violationC" type="integer" id="2004006">
+			<description>SPDB-10-3-1: Boolean variables cannot be compared directly to true, false, or 1, 0. (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004256"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+      
+		<property name="SPDB1032violationC" type="integer" id="20024010">
+			<description>SPDB-10-3-2: The integer variable should use  "==" or "! = " directly compared to 0. (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004260"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+      
+		<property name="SPDB1033violationC" type="integer" id="2004011">
+			<description>SPDB-10-3-3: Cannot compare a floating point variable to any number with an â€œ==â€�or "!=" (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004261"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+
+		<property name="SPDB1034violationC" type="integer" id="2004012">
+			<description>SPDB-10-3-4: Pointer variables should use "==" or "! = "compared with NULL (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002262"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+
+		<property name="SPDB1053violationC" type="integer" id="2004019">
+			<description>SPDB-10-5-3: branch of the each switch statement should have comments (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004269"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+		
+		<property name="SPDB1052violationC" type="integer" id="2004020">
+			<description>SPDB-1052: Don't forget the last default branch in switch (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2004270"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+		
+		SPDB 
+		<property name="SPDBviolationC" type="integer" id="2004021">
+			<description>SPDB-MNT-3: Storable and Member Data Element Initialization with Hard-Coded Literals (C/C++)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002271"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+		
+		
+		SCS CWE-252
+		<property name="CWE252violationCPP" type="integer" id="2002004">
+			<description>CWE-252: Unchecked Return Value (C/C++)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002254"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+
+		MGE OMG-ASCCRM-RLB-18
+		ASCCRM-RLB-18: Storable and Member Data Element Initialization with Hard-Coded Network Resource Configuration Data
+		<property name="OMGRLB18violationCPP" type="integer" id="2002024">
+			<description>OMG-RLB-18: Initialization with Hard-Coded Network Resource (C/C++)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002274"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+		
+		MGE CWE_685
+		CWE_685: Function Call With Incorrect Number of Arguments
+		<property name="CWE685violationCPP" type="integer" id="2002016">
+			<description>CWE_685: Function Call With Incorrect Number of Arguments (C)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002266"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>
+
+		MGE CWE_483
+		CWE-483: Incorrect Block Delimitation
+		<property name="CWE483violationCPP" type="integer" id="2002013">
+			<description>CWE-483: Incorrect Block Delimitation (C/C++)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002263"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>        
+
+		MGE OMG-ASCCRM-RLB-9
+		ASCCRM-RLB-9: Float Type Storable and Member Data Element Comparison with Equality Operator
+		<property name="OMGRLB9violationCPP" type="integer" id="2002022">
+			<description>OMG-RLB-9: Float Type Comparison with Equality Operator (C/C++)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002272"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>        
+
+		MGE OMG-ASCCRM-RLB-12
+		ASCCRM-RLB-12: Singleton Class Instance Creation without Proper Lock Element Management
+		<property name="OMGRLB12violationCPP" type="integer" id="2002023">
+			<description>OMG-RLB-12: Singleton Class Instance Creation without Proper Lock (C++)</description>
+			<attribute name="INF_TYPE" intValue="9"/>
+			<attribute name="INF_SUB_TYPE" intValue="2002273"/>
+			<attribute name="ACCESS_APPVIEW" intValue="1"/>
+			<attribute name="ACCESS_CVS" intValue="1"/>
+			<attribute name="ACCESS_HTML" intValue="1"/>
+	  	</property>    
+	  	-->     
+
+    </category>
+
+	<partialType name="C_FILE" >
+		<inheritedCategory name="SPDB_CustomMetrics_C" />
+		<inheritedCategory name="APM Client Language Artifacts"/>
+	</partialType>  			
+	
+ 	<partial_category name="CAST_MetricAssistant_WithMetrics_C_CPP">
+		<inheritedCategory name="SPDB_CustomMetrics_C"/>
+		<inheritedCategory name="APM Client Language Artifacts"/>
+	</partial_category>
+
+	 
+</metaModel>

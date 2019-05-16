@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>com.castsoftware.uc.spdb.cqr</id>
+    <version>0.0.1</version>
+    <title>SPDB C Custom Quality Rules</title>
+    <authors>CAST User Community</authors>
+    <owners>CAST</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://extend.castsoftware.com/V2/Licenses/Cast-Licence-UserCommunity-1.0.html</licenseUrl>
+    <description>SPDB C Custom Quality Rules</description>
+    <summary>SPDB C Custom Quality Rules</summary>
+    <tags>SPDB</tags>
+  </metadata>
+</package>
